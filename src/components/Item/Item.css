@@ -1,0 +1,30 @@
+.Card-General {
+    width: 150%;
+    border-style: groove;
+    border-width: 10px;
+    
+}
+.card-img-top {
+    width: 40%;
+    border-style: inset;
+    border-width: 5px;
+}
+.list-group-item {
+    background-color: rgb(8, 93, 93) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-style: unset;
+    font-weight: 200;
+}
+.texto-link {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+.boton-detalles {
+    background-color: black;
+    border-radius: 50%;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+}
