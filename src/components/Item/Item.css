@@ -1,11 +1,13 @@
 .Card-General {
+    display: flex;
+    flex-direction: column;
     width: 150%;
     border-style: groove;
     border-width: 10px;
     
 }
 .card-img-top {
-    width: 40%;
+    width: 50%;
     border-style: inset;
     border-width: 5px;
 }

@@ -7,12 +7,13 @@ import Logo from '../../assets/logo-tienda-lapices.jpg';
 const NavBar = () => {
     return (
         <nav className="navbar">
-            <Link to='/'><img src={Logo} alt='LogoTienda'className='Logo'></img></Link>
             <div className='Tres-Botones'>
-                <NavLink to={`/category/ELEMENTAL`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><button>ELEMENTAL</button></NavLink>
-                <NavLink to={`/category/PROFESIONAL`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><button>PROFESIONAL</button></NavLink>
+                <Link to='/'><img src={Logo} alt='LogoTienda'className='Logo'></img></Link>
+                <NavLink to={`/category/ELEMENTAL`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><button className='btn btn-success' style={{marginRight: 20}}>ELEMENTAL</button></NavLink>
+                <NavLink to={`/category/PROFESIONAL`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><button className='btn btn-success' style={{marginRight: 20}}>PROFESIONAL</button></NavLink>
+                <Link to='../PruebaFirebase'><button className='btn btn-success' style={{marginRight: 20}}>CATÁLOGO</button></Link>
+                <Link to='../ShoppingCart'><CartWidget><button className='btn btn-success'></button></CartWidget></Link>
             </div>
-            <CartWidget></CartWidget>
         </nav>
     )
 }

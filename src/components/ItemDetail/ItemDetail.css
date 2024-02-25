@@ -1,0 +1,23 @@
+.card-detalles {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: double;
+}
+.nombre-producto {
+    width: 20%;
+}
+.imagen-producto {
+    width: 20%;
+}
+.datos-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:burlywood ;
+    word-wrap: initial;
+}
+.info {
+    font-family: 'Times New Roman', Times, serif;
+}

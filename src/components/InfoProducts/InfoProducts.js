@@ -48,7 +48,7 @@ const products = [
         category: 'PROFESIONAL',
         img: acuarelaLapiz,
         stock: 25,
-        description: 'De rápida dilusión en agua. Madera fina y mina sintética de excelente calidad.'
+        description: 'De rápida dilusión en agua. Madera fina y mina sintética de excelente calidad, lo que asegura un brillo natural.'
     }
 ]
 
@@ -69,7 +69,7 @@ export const getProductById = (productId) => {
 export const getProductsByCategory = (categoryId) => {
     return new Promise ((resolve) => {
         setTimeout (() => {
-            resolve (products.find (cat => cat.id === categoryId))
+            resolve (products.filter (cat => cat.category === categoryId))
         }, 500)
     })
 }
